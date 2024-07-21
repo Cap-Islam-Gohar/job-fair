@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en" class="h-full">
+
+<head>
+	<meta charset="UTF-8" />
+	<link rel="icon" type="image/svg+xml" href="/vite.svg" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Vite + Vue</title>
+
+</head>
+
+<body class="min-h-full flex flex-col">
+
+	<header>
+		<nav class="bg-gray-800">
+			<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+				<div class="h-16 flex justify-between items-center">
+					<div class="flex items-center">
+						<div class="flex-shrink-0 text-white">
+							<svg class="h-8 w-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+								<path stroke-linecap="round" stroke-linejoin="round" d="M6.429 9.75 2.25 12l4.179 2.25m0-4.5 5.571 3 5.571-3m-11.142 0L2.25 7.5 12 2.25l9.75 5.25-4.179 2.25m0 0L21.75 12l-4.179 2.25m0 0 4.179 2.25L12 21.75 2.25 16.5l4.179-2.25m11.142 0-5.571 3-5.571-3" />
+							</svg>
+						</div>
+						<div class="hidden md:block">
+							<div class="ml-10 flex space-x-4 text-gray-300 items-baseline">
+								<a class="rounded-md px-3 py-2 font-medium text-sm bg-gray-900" href="#">Dashboard</a>
+								<a class="rounded-md px-3 py-2 font-medium text-sm hover:bg-gray-700 hover:text-white"
+									href="#">Costomers</a>
+								<a class="rounded-md px-3 py-2 font-medium text-sm hover:bg-gray-700 hover:text-white"
+									href="#">Transactions</a>
+							</div>
+						</div>
+					</div>
+					<div class="flex items-center">
+						<a href="#" class="text-red-600 hover:text-red-800 rounded-full">
+							<svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+								stroke-width="1.5" stroke="currentColor" class="size-6">
+								<path stroke-linecap="round" stroke-linejoin="round"
+									d="M5.636 5.636a9 9 0 1 0 12.728 0M12 3v9" />
+							</svg>
+						</a>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+
+		<main>
+			
+			<div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8" id="app">
+
+				<div class="w-full mt-20 border rounded-xl px-4 sm:px-6 lg:px-8 py-6 sm:py-8 lg:py-10">
+					<div class="sm:flex sm:items-center space-y-2">
+						<div class="sm:flex-auto">
+							<h1 class="text-lg font-bold leading-6 text-gray-900">Customers Grahp</h1>
+							<p class="mt-2 text-sm text-gray-700">Display Customer Transactions per Day .</p>
+						</div>
+						<div class="sm:ml-12 min-w-72 sm:flex-none">
+							<label for="customer" class="hidden sm:block text-sm font-medium leading-6 text-gray-900">Customer</label>
+							<div class="relative sm:mt-2 rounded-md shadow-sm">
+								<div class="pointer-events-none absolute inset-y-0 left-0 flex items-center px-2">
+									<span class="text-gray-500 sm:text-sm">
+										<svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+											<path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+										</svg>
+									</span>
+								</div>
+								<input type="text" name="customer" id="customer" class="block w-full rounded-md border-0 py-1.5 px-7 text-sm leading-6 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600" placeholder="Customer">
+								
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			
+		</main>
+
+	</header>
+
+	<script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
